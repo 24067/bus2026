@@ -120,6 +120,16 @@ body {
     margin-right: auto;
 }
 
+#t_hyouji {
+    font-size: 60px;            
+    font-weight: 600; 
+    color: #FFFF66;
+    border: 2px solid #696969;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 table {
     margin-top: 5px;
     margin-left: auto;
@@ -160,7 +170,6 @@ tbody > tr:nth-of-type(even) {
 .t_cell{
     color: #1E90FF;
 }
-
 
 .yokonarabi {
     display: flex;
