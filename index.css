@@ -115,16 +115,17 @@ body {
     font-size: 60px;            
     font-weight: 600; 
     color: #323232;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #t_hyouji {
-    font-size: 60px;            
-    font-weight: 600; 
-    color: #FFFF66;
-    border: 2px solid #696969;
+    font-size: 58px;            
+    font-weight: 600;
+    -webkit-text-stroke: 5px #323232;  /*輪郭線*/
+    color: #ffff1a;
+    paint-order: stroke;                 /*輪郭からの色塗り*/
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
