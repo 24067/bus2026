@@ -115,7 +115,7 @@ body {
     font-size: 60px;            
     font-weight: 600; 
     color: #323232;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -124,6 +124,7 @@ table {
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     border-collapse: collapse;     /*隣接する境界線を結合して表示*/
     border: 2px solid #A0A0A0;
     font-size: 12px;
