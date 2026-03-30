@@ -10,12 +10,11 @@ window.onload = function(){
     let minute = now.getMinutes();     //分
 
     let now_time = hour*60 + minute;   //今の時間を分に
-    let u = 0;
     let found = 0;
+    let targetlst;
     if (youbi == 0 || youbi == 6){    //日曜(0)か土曜(6)ならリスト0を使用
         document.getElementById("doniti").style.display = "table";      //日曜(0)か土曜(6)なら土日の表を表示
-        targetlst = timelst[0];       //日か土をえらんだらu=1
-        u++;
+        targetlst = timelst[0];       
     }else {
         document.getElementById("heijitu").style.display = "table";
         targetlst = timelst[1];
@@ -54,7 +53,7 @@ function timetable(){
 
 //祝日ボタンの
 function holiday(){
-    if (document.getElementById("heijitu").style.display = "table"){
+    if (document.getElementById("heijitu").style.display == "table"){
         document.getElementById("heijitu").style.display = "none";
         document.getElementById("doniti").style.display = "table";
     }
@@ -64,8 +63,8 @@ function holiday(){
     let minute = now.getMinutes();     //分
 
     let now_time = hour*60 + minute;   //今の時間を分に
-    let u = 0;
     let found = 0;
+    let targetlst = timelst[typeIdx];
     targetlst = timelst[0];
 
     for (let i = 0; i < targetlst.length; i++){      //現在時刻の次のバスの時刻を表示
@@ -85,6 +84,6 @@ function holiday(){
         }
     }
     if (found == 0){                                        //本日バスがないなら
-        document.getElementById("hyouji").innerHTML = "無";
+        document.getElementById("hyouji").innerHTML = "バス無し";
     }
 }
