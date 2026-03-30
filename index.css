@@ -59,7 +59,7 @@ body {
     align-items: center;
 
     position: fixed;   /* 位置固定 */
-    bottom: 40px;  
+    bottom: 20px;  
     left: 40px;    
         
 }
@@ -82,7 +82,7 @@ body {
     align-items: center;
 
     position: fixed;   /* 位置固定 */
-    bottom: 40px;      
+    bottom: 20px;      
     left: 0;
     right: 0;
     margin-left: auto;
@@ -106,7 +106,7 @@ body {
     align-items: center;
 
     position: fixed;   /* 位置固定 */
-    bottom: 40px;  
+    bottom: 20px;  
     right: 40px;    
         
 }
@@ -114,8 +114,7 @@ body {
 #hyouji {
     font-size: 60px;            
     font-weight: 600; 
-    color: #323232;   
-    margin-top: 4px;
+    color: #323232;
     margin-left: auto;
     margin-right: auto;
 }
@@ -124,8 +123,6 @@ table {
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-
     border-collapse: collapse;     /*隣接する境界線を結合して表示*/
     border: 2px solid #A0A0A0;
     font-size: 16px;
