@@ -42,24 +42,8 @@ body {
     margin-bottom: 80px;
 }
 
-.button_2 {                   /*次のバス*/
-    background-color: #F5F5F5;
-    color: #323232;
-    font-size: 30px;
-    border: 2px solid #A0A0A0;   
-    border-radius: 12px;
 
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-    display: flex;           /*文字を枠の中心に*/
-    justify-content: center;  
-    align-items: center;
-    
-}
-
-.button_3 {                  /*戻る*/
+.button_2 {                  /*戻る*/
     background-color: #F5F5F5;
     color: #696969;
 
@@ -80,7 +64,7 @@ body {
         
 }
 
-.button_4 {                  /*時刻表*/
+.button_3 {                  /*時刻表*/
     background-color: #F5F5F5;
     color: #696969;
 
@@ -106,7 +90,7 @@ body {
 
 }
 
-.button_5 {                  /*祝日*/
+.button_4 {                  /*祝日*/
     background-color: #F5F5F5;
     color: #696969;
 
@@ -144,7 +128,7 @@ table {
 
     border-collapse: collapse;     /*隣接する境界線を結合して表示*/
     border: 2px solid #A0A0A0;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 .top1{
