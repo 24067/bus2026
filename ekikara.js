@@ -8,7 +8,7 @@ window.onload = function(){
     let youbi = now.getDay();          //曜日
     let hour = now.getHours();         //時間
     let minute = now.getMinutes();     //分
-
+    let targetlst;
     let now_time = hour*60 + minute;   //今の時間を分に
     let u = 0;
     let found = 0;
@@ -32,9 +32,11 @@ window.onload = function(){
                     
             let new_bus = bus_hour + ":" + bus_minute;    
             if ((u == 1 && i >14) || (u == 0 && i > 18)){   //天郷なら追加
-                new_bus ="天郷" + new_bus;
+                new_bus = "天郷" + new_bus;
+                document.getElementById("t_hyouji").innerHTML = new_bus;
+            }else{
+                document.getElementById("hyouji").innerHTML = new_bus;
             }
-            document.getElementById("hyouji").innerHTML = new_bus;
             found++;
             break;
         }
@@ -56,7 +58,7 @@ function timetable(){
 
 //祝日ボタンの
 function holiday(){
-    if (document.getElementById("heijitu").style.display = "table"){
+    if (document.getElementById("heijitu").style.display == "table"){
         document.getElementById("heijitu").style.display = "none";
         document.getElementById("doniti").style.display = "table";
     }
@@ -66,9 +68,9 @@ function holiday(){
     let minute = now.getMinutes();     //分
 
     let now_time = hour*60 + minute;   //今の時間を分に
-    let u = 0;
+
     let found = 0;
-    targetlst = timelst[0];
+    let targetlst = timelst[0];
 
     for (let i = 0; i < targetlst.length; i++){      //現在時刻の次のバスの時刻を表示
         let bus_time = targetlst[i];
@@ -80,15 +82,20 @@ function holiday(){
             }
                     
             let new_bus = bus_hour + ":" + bus_minute      
-            if ((u == 1 && i >14) || (u == 0 && i > 18)){   //天郷なら追加
+            if (i >14){               //天郷なら追加
                 new_bus ="天郷" + new_bus;
+                document.getElementById("t_hyouji").innerHTML = new_bus;
+                document.getElementById("hyouji").innerHTML = "";
+            }else{
+                document.getElementById("hyouji").innerHTML = new_bus;
+                document.getElementById("t_hyouji").innerHTML = "";
             }
-            document.getElementById("hyouji").innerHTML = new_bus;
             found++;
             break;
         }
     }
     if (found == 0){                                        //本日バスがないなら
-        document.getElementById("hyouji").innerHTML = "無";
+        document.getElementById("hyouji").innerHTML = "バス無し";
+        document.getElementById("t_hyouji").innerHTML = "";
     }
 }
