@@ -34,7 +34,7 @@ window.onload = function(){
             if ((u == 1 && i >14) || (u == 0 && i > 18)){   //天郷なら追加
                 new_bus ="天郷" + new_bus;
             }
-            document.getElementById("t_hyouji").innerHTML = new_bus;
+            document.getElementById("hyouji").innerHTML = new_bus;
             found++;
             break;
         }
@@ -83,7 +83,7 @@ function holiday(){
             if ((u == 1 && i >14) || (u == 0 && i > 18)){   //天郷なら追加
                 new_bus ="天郷" + new_bus;
             }
-            document.getElementById("t_hyouji").innerHTML = new_bus;
+            document.getElementById("hyouji").innerHTML = new_bus;
             found++;
             break;
         }
