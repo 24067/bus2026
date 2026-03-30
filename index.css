@@ -157,6 +157,11 @@ tbody > tr:nth-of-type(even) {
     border-bottom: 1px solid #A0A0A0;
 }
 
+.t_cell{
+    color: #1E90FF;
+}
+
+
 .yokonarabi {
     display: flex;
     margin: 0;
