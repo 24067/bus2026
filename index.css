@@ -144,7 +144,7 @@ table {
 
     border-collapse: collapse;     /*隣接する境界線を結合して表示*/
     border: 2px solid #A0A0A0;
-    font-size: 14px;
+    font-size: 1px;
 }
 
 .top1{
