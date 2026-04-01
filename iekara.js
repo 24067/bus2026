@@ -4,6 +4,7 @@ const timelst =[
 ];
 
 window.onload = function(){
+    localStorage.setItem("number", "0");
     let now = new Date();              
     let youbi = now.getDay();          //曜日
     let hour = now.getHours();         //時間
