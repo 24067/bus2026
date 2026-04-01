@@ -68,7 +68,6 @@ function holiday(){
     let minute = now.getMinutes();     //分
 
     let now_time = hour*60 + minute;   //今の時間を分に
-
     let found = 0;
     let targetlst = timelst[0];
 
