@@ -64,6 +64,27 @@ body {
         
 }
 
+.button_2_1 {                  /*戻る*/
+    background-color: #EEEEEE;
+    color: #696969;
+
+    border: 2px solid #A0A0A0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 14%;              /*横幅*/
+    height: 44px;              /*縦幅*/
+    
+    display: flex;           /*文字を枠の中心に*/
+    justify-content: center;  
+    align-items: center;
+
+    position: fixed;   /* 位置固定 */
+    bottom: 20px;  
+    left: 40px;    
+        
+}
+
 .button_3 {                  /*時刻表*/
     background-color: #EEEEEE;
     color: #696969;
