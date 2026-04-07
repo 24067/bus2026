@@ -136,7 +136,7 @@ body{
     font-size: 60px;            
     font-weight: 600; 
     color: #323232;
-    margin-top: -20px;
+    margin-top: -24px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -147,7 +147,7 @@ body{
     -webkit-text-stroke: 5px #323232;  /*輪郭線*/
     color: #ffff1a;
     paint-order: stroke;                 /*輪郭からの色塗り*/
-    margin-top: -20px;
+    margin-top: -24px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,7 +156,7 @@ body{
     display: flex;           
     align-items: center;
     justify-content: center;
-    margin-top: -10px;
+    margin-top: -4px;
     gap: 6px
 }
 
