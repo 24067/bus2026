@@ -30,7 +30,9 @@ window.onload = function(){
             }
                     
             let new_bus = bus_hour + ":" + bus_minute;      
-            
+            let nokori_bus = bus_time - now_time;
+
+            document.getElementById("nokori").innerHTML = nokori_bus;
             document.getElementById("hyouji").innerHTML = new_bus;
             found++;
             break;
@@ -76,7 +78,9 @@ function holiday(){
             }
                     
             let new_bus = bus_hour + ":" + bus_minute      
-            
+            let nokori_bus = bus_time - now_time;
+
+            document.getElementById("nokori").innerHTML = nokori_bus;
             document.getElementById("hyouji").innerHTML = new_bus;
             found++;
             break;
