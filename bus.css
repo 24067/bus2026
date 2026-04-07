@@ -1,0 +1,226 @@
+body{
+    background-color: #FAFAFA;
+    margin: 0;        
+    text-align: center;   /*全部中央揃え*/
+    font-family: "Hiragino Kaku Gothic ProN";
+}
+
+.button{                  /*家から 駅から*/
+    background-color: transparent;
+    color: #1E90FF;
+    border: 4px solid #1E90FF; 
+    border-radius: 24px;      /*角を丸める*/
+    font-size: 40px;
+    font-weight: 700;
+    
+    display: flex;           /*文字を枠の中心に*/
+    justify-content: center;  
+    align-items: center;
+
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 50%;              /*横幅*/
+    height: 100px;              /*縦幅*/
+}
+
+#title{
+    color: #323232;
+    font-size: 56px;     
+    font-weight: 900;
+    margin-top: 130px;    /*文字の上に余白*/
+    margin-bottom: 0px;
+}
+
+#title_2{
+    color: #323232;
+    font-size: 40px;     
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+
+.button_2{                  /*戻る*/
+    background-color: #EEEEEE;
+    color: #696969;
+
+    border: 2px solid #A0A0A0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 14%;              /*横幅*/
+    height: 44px;              /*縦幅*/
+    
+    display: flex;           /*文字を枠の中心に*/
+    justify-content: center;  
+    align-items: center;
+
+    position: fixed;   /* 位置固定 */
+    bottom: 20px;  
+    left: 40px;    
+        
+}
+
+.button_2_1{                  /*戻る*/
+    background-color: #EEEEEE;
+    color: #696969;
+
+    border: 2px solid #A0A0A0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 14%;              /*横幅*/
+    height: 44px;              /*縦幅*/
+    
+    display: flex;           /*文字を枠の中心に*/
+    justify-content: center;  
+    align-items: center;
+
+    position: fixed;   /* 位置固定 */
+    bottom: 20px;  
+    left: 40px;    
+        
+}
+
+.button_3{                  /*時刻表*/
+    background-color: #EEEEEE;
+    color: #696969;
+
+    border-color: #A0A0A0;
+    border-style: solid;      /*実線*/
+    border-width: 2px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 20%;              /*横幅*/
+    height: 44px;              /*縦幅*/
+    
+    display: flex;           /*文字を枠の中心に*/
+    justify-content: center;  
+    align-items: center;
+
+    position: fixed;   /* 位置固定 */
+    bottom: 20px;      
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.button_4{                  /*祝日*/
+    background-color: #EEEEEE;
+    color: #696969;
+
+    border: 2px solid #A0A0A0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 14%;              /*横幅*/
+    height: 44px;               /*縦幅*/
+    
+    display: flex;           /*文字を枠の中心に*/
+    justify-content: center;  
+    align-items: center;
+
+    position: fixed;   /* 位置固定 */
+    bottom: 20px;  
+    right: 40px;    
+        
+}
+
+#hyouji{
+    font-size: 60px;            
+    font-weight: 600; 
+    color: #323232;
+    margin-top: -18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#t_hyouji{
+    font-size: 58px;            
+    font-weight: 600;
+    -webkit-text-stroke: 5px #323232;  /*輪郭線*/
+    color: #ffff1a;
+    paint-order: stroke;                 /*輪郭からの色塗り*/
+    margin-top: -18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info{
+    display: flex;           
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    gap: 6px
+}
+
+#nokori_tugi{
+    font-size: 20px;            
+    font-weight: 500; 
+    color: #323232;
+}
+
+#nokori{
+    font-size: 36px;            
+    font-weight: 550; 
+    color: #323232;
+}
+
+#nokori_fun{
+    font-size: 20px;            
+    font-weight: 500; 
+    color: #323232;
+}
+
+table{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-collapse: collapse;     /*隣接する境界線を結合して表示*/
+    border: 2px solid #A0A0A0;
+    font-size: 12px;
+    height: 10px;              /*縦幅*/
+}
+
+.top1{
+    background-color: #FFB597;
+}
+.top2{
+    background-color: #C0EDFF;
+}
+
+th{
+    border: 1px solid #A0A0A0;
+}
+
+td{
+    border: 1px solid #A0A0A0;
+}
+
+tbody > tr:nth-of-type(even){
+    background-color: #EEEEEE;  /*交互に色変え*/
+}
+
+.cell{
+    width: 100px;
+    height: 8px;
+    border-right: 1px solid #A0A0A0;
+    border-bottom: 1px solid #A0A0A0;
+}
+
+.t_cell{
+    color: #1E90FF;
+}
+
+.yokonarabi{
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
