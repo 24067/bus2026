@@ -31,18 +31,23 @@ window.onload = function(){
                 bus_minute = "0" + bus_minute;
             }
                     
-            let new_bus = bus_hour + ":" + bus_minute;    
+            let new_bus = bus_hour + ":" + bus_minute; 
+            let nokori_bus = bus_time - now_time;  
+
             if ((u == 1 && i >14) || (u == 0 && i > 18)){   //天郷なら追加
                 new_bus = "天郷" + new_bus;
+                document.getElementById("nokori").innerHTML = nokori_bus;
                 document.getElementById("t_hyouji").innerHTML = new_bus;
+
             }else{
+                document.getElementById("nokori").innerHTML = nokori_bus;
                 document.getElementById("hyouji").innerHTML = new_bus;
             }
             found++;
             break;
         }
     }
-    if (found == 0){                                        //本日バスがないなら
+    if (found == 0){                                   //本日バスがないなら
         document.getElementById("hyouji").innerHTML = "バス無し";
     }
 }
@@ -81,12 +86,16 @@ function holiday(){
                 bus_minute = "0" + bus_minute;
             }
                     
-            let new_bus = bus_hour + ":" + bus_minute      
+            let new_bus = bus_hour + ":" + bus_minute  
+            let nokori_bus = bus_time - now_time;
+            
             if (i >14){               //天郷なら追加
                 new_bus ="天郷" + new_bus;
+                document.getElementById("nokori").innerHTML = nokori_bus;
                 document.getElementById("t_hyouji").innerHTML = new_bus;
                 document.getElementById("hyouji").innerHTML = "";
             }else{
+                document.getElementById("nokori").innerHTML = nokori_bus;
                 document.getElementById("hyouji").innerHTML = new_bus;
                 document.getElementById("t_hyouji").innerHTML = "";
             }
