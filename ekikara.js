@@ -49,6 +49,7 @@ window.onload = function(){
     }
     if (found == 0){                                   //本日バスがないなら
         document.getElementById("hyouji").innerHTML = "バス無し";
+        document.getElementById("nokori").innerHTML = "";
     }
 }
 
@@ -89,7 +90,7 @@ function holiday(){
             let new_bus = bus_hour + ":" + bus_minute  
             let nokori_bus = bus_time - now_time;
             
-            if (i >14){               //天郷なら追加
+            if (i > 14){               //天郷なら追加
                 new_bus ="天郷" + new_bus;
                 document.getElementById("nokori").innerHTML = nokori_bus;
                 document.getElementById("t_hyouji").innerHTML = new_bus;
@@ -106,5 +107,6 @@ function holiday(){
     if (found == 0){                                        //本日バスがないなら
         document.getElementById("hyouji").innerHTML = "バス無し";
         document.getElementById("t_hyouji").innerHTML = "";
+        document.getElementById("nokori").innerHTML = "";
     }
 }
