@@ -136,18 +136,27 @@ body{
     font-size: 60px;            
     font-weight: 600; 
     color: #323232;
-    margin-top: -12px;
+    margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#t_hyouji{
+#hyouji_nasi{
+    font-size: 60px;            
+    font-weight: 600; 
+    color: #323232;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hyouji_tenngou{
     font-size: 58px;            
     font-weight: 600;
     -webkit-text-stroke: 5px #323232;  /*輪郭線*/
     color: #ffff1a;
     paint-order: stroke;                 /*輪郭からの色塗り*/
-    margin-top: -12px;
+    margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -156,7 +165,7 @@ body{
     display: flex;           
     align-items: center;
     justify-content: center;
-    margin-top: -8px;
+    margin-top: -10px;
     gap: 6px
 }
 
