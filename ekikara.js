@@ -37,7 +37,7 @@ window.onload = function(){
             if ((u == 1 && i >14) || (u == 0 && i > 18)){   //天郷なら追加
                 new_bus = "天郷" + new_bus;
                 document.getElementById("nokori").innerHTML = nokori_bus;
-                document.getElementById("t_hyouji").innerHTML = new_bus;
+                document.getElementById("hyouji_tenngou").innerHTML = new_bus;
 
             }else{
                 document.getElementById("nokori").innerHTML = nokori_bus;
@@ -48,8 +48,8 @@ window.onload = function(){
         }
     }
     if (found == 0){                                   //本日バスがないなら
-        document.getElementById("hyouji").innerHTML = "バス無し";
-        document.getElementById("nokori").innerHTML = "";
+        document.getElementById("hyouji_nasi").innerHTML = "バス無し";
+        document.getElementById("info").innerHTML = "";
     }
 }
 
@@ -93,20 +93,21 @@ function holiday(){
             if (i > 14){               //天郷なら追加
                 new_bus ="天郷" + new_bus;
                 document.getElementById("nokori").innerHTML = nokori_bus;
-                document.getElementById("t_hyouji").innerHTML = new_bus;
+                document.getElementById("hyouji_tenngou").innerHTML = new_bus;
                 document.getElementById("hyouji").innerHTML = "";
             }else{
                 document.getElementById("nokori").innerHTML = nokori_bus;
                 document.getElementById("hyouji").innerHTML = new_bus;
-                document.getElementById("t_hyouji").innerHTML = "";
+                document.getElementById("hyouji_tenngou").innerHTML = "";
             }
             found++;
             break;
         }
     }
-    if (found == 0){                                        //本日バスがないなら
-        document.getElementById("hyouji").innerHTML = "バス無し";
-        document.getElementById("t_hyouji").innerHTML = "";
-        document.getElementById("nokori").innerHTML = "";
+    if (found == 0){      
+        document.getElementById("hyouji_nasi").innerHTML = "バス無し";    //本日バスがないなら
+        document.getElementById("hyouji").innerHTML = "";
+        document.getElementById("hyouji_tenngou").innerHTML = "";
+        document.getElementById("info").innerHTML = "";
     }
 }
