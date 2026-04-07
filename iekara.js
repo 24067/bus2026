@@ -40,6 +40,7 @@ window.onload = function(){
     }
     if (found == 0){                                        //本日バスがないなら
         document.getElementById("hyouji").innerHTML = "バス無し";
+        document.getElementById("nokori").innerHTML = "";
     }
 }
 
@@ -88,5 +89,6 @@ function holiday(){
     }
     if (found == 0){                                        //本日バスがないなら
         document.getElementById("hyouji").innerHTML = "バス無し";
+        document.getElementById("nokori").innerHTML = "";
     }
 }
